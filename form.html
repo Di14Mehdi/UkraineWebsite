@@ -14,6 +14,25 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .cclear {clear: both}
 .bclear {clear: both}
 .pwide{width: 100%}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 </style>
 <body>
 
@@ -48,18 +67,20 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
 
 <!-- Contact information footer-->
-<a id="contact"><div class="w3-row w3-amber">
-  <div class="w3-col w3-container" style="width:20%; height:250px; padding:20px;">
-    <img src="Images/ccum.jpg" class="w3-center w3-circle" ></div>
-
-  <div class="w3-col w3-container" style="width:60%; padding-top:30px;">
-    <h3 class="w3-center" style="text-decoration: underline;">Contactez nous</h3>
-    <h5 class="w3-center">HASSAN EL MARDI</h5>
-    <h5 class="w3-center">+212 661.88.95.60</h5>
-    <h5 class="w3-center"><a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">helmardi@gmail.com</a></h5>
+<div class="row w3-amber" id="contact">
+  <div class="column">
+    <h1><img src="Images/centreukm.png" class="w3-center" style="height:100%; width:70%; text-align: center"></h1>
+  </div>
+  <div class="column" >
+    <h3 class="w3-center" style="text-decoration: underline; font-size:2.5vw;">Contactez nous</h3>
+    <h5 class="w3-center"  style="font-size:2.5vw;">HASSAN EL MARDI</h5>
+    <h5 class="w3-center" style="font-size:2.5vw;">+212 661.88.95.60</h5>
+    <h5 class="w3-center" style="font-size:2.5vw;"><a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">helmardi@gmail.com</a></h5>
+  </div>
+  <div class="column" >
+    <h1><img src="Images/aaatestadm.png" class="w3-center" style="height:100%; width:70%; text-align: center"></h1>
   </div>
 </div>
-</a>
 
 
 <!-- Footer -->
